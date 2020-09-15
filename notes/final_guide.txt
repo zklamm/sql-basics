@@ -1,0 +1,66 @@
+SQL
+___
+1.  Explain the difference between INNER, LEFT OUTER, and RIGHT OUTER joins.
+
+    An INNER JOIN returns a table that only includes rows of data where both columns in the join condition are present. For example, suppose we have two tables, `movies` and `categories`, and their join condition is `movies.category_id = categories.id`. 
+
+    A LEFT OUTER JOIN returns a table that includes all rows of data from an INNER JOIN, but also any rows of the first table that did not meet the join condition. For these records that don't meet the join condition, the columns in the join table from the second table will have NULL values.
+
+    A RIGHT OUTER JOIN is simply the opposite of a LEFT OUTER JOIN. Again, all rows from an INNER JOIN are present in the join table, but also any rows from the second table that did not meet the join condition. The absent values from the first table are represented by NULL.
+
+
+2.  Name and define the three sublanguages of SQL.
+
+    -Data Definition Language: used to define the structure or schema of a table. Examples of keywords used in DDL statements include CREATE, ALTER, RENAME, DROP.
+    -Data Manipulation Language: used to manipulate the data in a table. Examples of keywords used in DML statements include INSERT, SELECT, UPDATE, DELETE.
+    -Data Control Language: used to specify user privileges for a database. Examples of keywords used in DCL statements include GRANT.
+
+3.  Write SQL statements using INSERT, UPDATE, DELETE, CREATE/ALTER/DROP TABLE, ADD/ALTER/DROP COLUMN.
+
+    Good
+
+4.  Understand how to use GROUP BY, ORDER BY, WHERE, and HAVING.
+
+    Good
+
+PostgreSQL
+__________
+5.  Describe what a sequence is and what they are used for.
+
+    A sequence is typically a set of integers that are generated in order and are often used in order to provide a unique, not null value to each row in a table.
+
+6.  Create an auto-incrementing column.
+
+    To create an auto-incrementing column, you can set the column to be type serial.
+
+7.  Define a default value for a column.
+
+    A default value is the value that is assigned to a column if the keyword DEFAULT is used upon data insertion or if the column name is not specified.
+
+8.  Be able to describe what primary, foreign, natural, and surrogate keys are.
+
+    Primary Key: a field that uniquely identifies each row of data in a table. A table can only have one primary key and values in this field cannot be NULL.
+    Foreign Key: a field in one table that typically refers to the primary key in another table.
+    Natural Key: a field that exists in a table and can be used to uniquely identify rows of data in that table.
+    Surrogate Key: a field that is created in a table with the express purpose of uniquely identifying a row of data in a database.
+
+9.  Create and remove CHECK constraints from a column.
+
+    Good
+
+10. Create and remove foreign key constraints from a column.
+
+    Good
+
+Database Diagrams
+_________________
+11. Define cardinality and modality.
+
+Cardinality refers to the number of objects on each side of the relationship (typically one to one, one to many, or many to many).
+
+Modality refers to whether a relationship is required.
+
+12. Be able to draw database diagrams using crow's foot notation.
+
+
+

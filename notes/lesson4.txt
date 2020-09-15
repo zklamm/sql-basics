@@ -1,0 +1,27 @@
+What to Focus On
+
+Observe the progression of steps from high-level requirements to low-level implementation details.
+Think about how project requirements affect what SQL is written later.
+
+Understand how to dynamically generate SQL.
+We'll be creating SQL statements from Ruby. There are risks associated with this practice, so pay special attention to how this can be done safely.
+
+Focus on the database and not the application.
+We're building a command-line application in this lesson. This is a useful experience to have, but you are not expected to be an expert on building this style of application after completing this lesson. This aspect of the project should be considered secondary to its database interaction functionality.
+
+
+__________
+Summary
+__________
+
+
+
+In this lesson, we've looked at how to:
+
+Use the pg gem to interact with a PostgreSQL database from Ruby
+Creating a new PG::Connection object
+Executing SQL statements using #exec and #exec_params
+Accessing query results contained in PG::Result objects
+Build a small command-line Ruby application
+Automatically create tables if they do not exist
+In the next lesson, we'll build on top of these topics by using them in the context of a web application.
